@@ -18,6 +18,8 @@ int _printf(const char *format, ...)
 		{"%s", str_pr},
 		{"%c", char_pr},
 		{"%%", per_pr},
+		{"%d", dec_pr}
+		{"%i", int_pr}
 		};
 
 	if (format == NULL || (format[0] == '%' && !format[1]))
