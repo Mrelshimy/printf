@@ -7,9 +7,18 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * struct call_fn - struct for calling printing functions
+ *
+ * Description: a structure to check specifier and call it's function
+ *
+ *@sp: pointer to char - specifier
+ *@fn: pointer to the called function
+ */
+
 typedef struct call_fn
 {
-       	char* sp;
+	char *sp;
 	int (*fn)();
 } call_fn;
 
