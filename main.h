@@ -7,7 +7,17 @@
 #include <stdlib.h>
 #include <string.h>
 
+typedef struct call_fn
+{
+       	char* sp;
+	int (*fn)();
+} call_fn;
+
+int str_pr(va_list pfargs);
+int char_pr(va_list pfargs);
+int per_pr(void);
+int dec_pr(va_list pfargs);
+int int_pr(va_list pfargs);
 int _printf(const char *format, ...);
-int check_spec(const char *format, va_list pfargs);
 
 #endif

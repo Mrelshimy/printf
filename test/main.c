@@ -1,19 +1,22 @@
 #include "main.h"
 
 int main(){
-		int ret ;
-		int ret2;
-		ret2 = _printf("abcndaw%");
-		printf("ret2 = %d\n", ret2);
-		ret = printf("abcndaw%");
-		printf("return = %d", ret);
-		printf("\n");
-	        _printf("Hello code\n");
-		_printf("Hello %world\n");
-		_printf("%");
-		_printf("Hello %sorld\n", "WO");
-		_printf("% Hello %%world\n");
-		_printf("Hello %c world\n", 'H');
-								    
-			    return(ret);
+	    
+	   int a, b, c ,d, e, f, g;
+	       a = _printf("Hello World\n");
+	           printf("a %d\n", a);
+		       b = _printf("H%cllo\n", 'e');
+		           printf("b %d\n", b);
+			       c = _printf("world %s Hello\n", "Hello");
+			           printf("c %d\n", c);
+				       d = _printf("%%Hello%%world%%\n");
+				           printf("d %d\n", d);
+					       e = _printf("Hi %morld\n");
+					           printf("e %d\n", e);
+						       f = _printf("% ");
+						           printf("f %d\n", f);
+							       g = _printf("%d\n", 100);
+							           printf("g %d\n", g);
+
+								       return(0);
 }
