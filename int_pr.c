@@ -14,6 +14,9 @@ int int_pr(va_list pfargs)
 	int int_ip = va_arg(pfargs, int);
 	int i = 0;
 	int abs_int, last_d, curr_d, tens = 1;
+	
+	if (pfargs == NULL)
+		return (-1);
 
 	last_d = int_ip % 10;
 	int_ip = int_ip / 10;

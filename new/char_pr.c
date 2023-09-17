@@ -13,6 +13,6 @@ int char_pr(va_list pfargs)
 {
 	int c_sp = va_arg(pfargs, int);
 
-	write(1, &c_sp, 1);
+	putchar(c_sp);
 	return (1);
 }

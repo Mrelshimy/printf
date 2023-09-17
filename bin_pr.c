@@ -13,7 +13,7 @@ int bin_pr(va_list pfargs)
 {
 	unsigned int dec_int = va_arg(pfargs, int);
 	int a = 0, b;
-	unsigned int bin_int[32];
+	unsigned int bin_int[1024];
 
 	if (!pfargs)
 		exit(-1);

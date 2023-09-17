@@ -11,37 +11,37 @@
 
 int _printf(const char *format, ...)
 {
-	int count_ret = 0;
-	int n;
-	va_list pfargs;
 	call_fn check_sp[] = {
-		{"%s", str_pr},
+		{"%b", bin_pr},
 		{"%c", char_pr},
 		{"%%", per_pr},
 		{"%d", int_pr},
-		{"%i", int_pr}
-		};
+		{"%s", str_pr},
+	};
 
+	int count_ret = 0;
+	int n = 0, m;
+	va_list pfargs;
+
+	va_start(pfargs, format);
 	if (format == NULL || (format[0] == '%' && !format[1]))
 		return (-1);
-	va_start(pfargs, format);
-	while (*format)
+	while (format[n] != '\0')
 	{
-		if (*format != '%')
+		m = 4;
+		while (m >= 0)
 		{
-			write(1, format, 1);
-			count_ret++;
-		}
-		else
-		{
-			format++;
-			for (n = 0; n < 5; n++)
+			if (check_sp[m].sp[0] == format[n] && check_sp[m].sp[1] == format[n + 1])
 			{
-				if (*format == check_sp[n].sp[1])
-					count_ret += check_sp[n].fn(pfargs);
+				count_ret += check_sp[m].fn(pfargs);
+				n = n + 2;
 			}
+			m--;
 		}
-		format++;
+		putchar (format[n]);
+		count_ret++;
+		n++;
+
 	}
 	va_end(pfargs);
 	return (count_ret);

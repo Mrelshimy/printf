@@ -11,10 +11,11 @@
 
 int str_pr(va_list pfargs)
 {
-	int i;
+	int i, j;
 	char *s_sp = va_arg(pfargs, char *);
 
 	i = strlen(s_sp);
-	write(1, s_sp, i);
+	for (j = 0; j < i; j++)
+		putchar(s_sp[j]);
 	return (i);
 }

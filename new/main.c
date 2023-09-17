@@ -7,7 +7,7 @@ int main()
 	printf("a %d\n", a);
 	b = _printf("Hello %d world\n", 12345);
 	printf("b %d\n", b);
-	c = _printf("Hello %s orld\n", "wo");
+	c = _printf("Hello %srld\n", "wo");
 	printf("c %d\n", c);
 	d = _printf("H%cllo world\n", 'e');
 	printf("d %d\n", d);
