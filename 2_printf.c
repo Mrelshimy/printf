@@ -18,7 +18,7 @@ int _printf(const char *format, ...)
 		{"%s", str_pr},
 		{"%c", char_pr},
 		{"%%", per_pr},
-		{"%d", dec_pr}
+		{"%d", int_pr},
 		{"%i", int_pr}
 		};
 
