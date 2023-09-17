@@ -16,7 +16,7 @@ int rev_pr(va_list pfargs)
 
 	if (s_r == NULL)
 		s_r = "(null)";
-	while (s_sp[i] != '\0')
+	while (s_r[i] != '\0')
 		i++;
 
 	for (j = i - 1; j >= 0; j--)
