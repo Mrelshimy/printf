@@ -18,6 +18,8 @@ int _printf(const char *format, ...)
 		{"%s", str_pr},
 		{"%c", char_pr},
 		{"%%", per_pr},
+		{"%d", int_pr},
+		{"%i", int_pr},
 		};
 
 	if (format == NULL || (format[0] == '%' && !format[1]))
@@ -33,7 +35,7 @@ int _printf(const char *format, ...)
 		else
 		{
 			format++;
-			for (n = 0; n < 3; n++)
+			for (n = 0; n < 5; n++)
 			{
 				if (*format == check_sp[n].sp[1])
 					count_ret += check_sp[n].fn(pfargs);
