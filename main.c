@@ -16,6 +16,6 @@ int main()
 	f = _printf("% ");
 	printf("f %d\n", f);
 	g = _printf("%d", 100);
-	printf("g %d\n", g);
-	return (0);
+	 printf("g %d\n", g);
+	return(0);
 }
