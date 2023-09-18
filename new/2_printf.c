@@ -26,7 +26,6 @@ int _printf(const char *format, ...)
 	va_start(pfargs, format);
 	if (format == NULL || (format[0] == '%' && !format[1]))
 		return (-1);
-check:
 	while (format[n] != '\0')
 	{
 		m = 4;
@@ -36,7 +35,6 @@ check:
 			{
 				count_ret += check_sp[m].fn(pfargs);
 				n = n + 2;
-				goto check;
 			}
 			m--;
 		}
