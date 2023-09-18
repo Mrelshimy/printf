@@ -14,12 +14,16 @@ int rev_pr(va_list pfargs)
 	int i = 0, j;
 	char *s_r = va_arg(pfargs, char*);
 
-	if (s_r == NULL)
-		s_r = "(null)";
 	while (s_r[i] != '\0')
 		i++;
+	j = i;
+	i -= 1;
 
-	for (j = i - 1; j >= 0; j--)
-		putchar(s_r[j]);
-	return (i);
+	while (i >= 0)
+	{
+		putchar(s_r[i]);
+		i--;
+	}
+
+	return (j);
 }
