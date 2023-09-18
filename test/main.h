@@ -32,6 +32,8 @@ int int_pr(va_list pfargs);
 int bin_pr(va_list pfargs);
 int rev_pr(va_list pfargs);
 int hex_pr(va_list pfargs, const char *format);
+int rot13_pr(va_list pfargs);
+int _putchar(char c);
 int ptr_pr(va_list pfargs);
 int _printf(const char *format, ...);
 
