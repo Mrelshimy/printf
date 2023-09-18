@@ -21,7 +21,7 @@ int int_pr(va_list pfargs)
 
 	if (last_d < 0)
 	{
-		_putchar('-');
+		putchar('-');
 		int_ip = -int_ip;
 		last_d = -last_d;
 		abs_int = -abs_int;
@@ -40,12 +40,12 @@ int int_pr(va_list pfargs)
 		while (tens > 0)
 		{
 			curr_d = abs_int / tens;
-			_putchar('0' + curr_d);
+			putchar('0' + curr_d);
 			abs_int = abs_int - (tens * curr_d);
 			tens = tens / 10;
 			i++;
 		}
 	}
-	_putchar('0' + last_d);
+	putchar('0' + last_d);
 	return (i);
 }
