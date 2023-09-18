@@ -25,6 +25,10 @@ typedef struct call_fn
 	int (*fn)();
 } call_fn;
 
+int u_pr(va_list pfargs);
+int o_pr(va_list pfargs);
+int x_pr(va_list pfargs);
+int X_pr(va_list pfargs);
 int str_pr(va_list pfargs);
 int _putchar(char c);
 int char_pr(va_list pfargs);
