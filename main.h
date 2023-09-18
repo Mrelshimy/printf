@@ -29,6 +29,7 @@ int char_pr(va_list pfargs);
 int per_pr(void);
 int int_pr(va_list pfargs);
 int bin_pr(va_list pfargs);
+int rev_pr(va_list pfargs);
 int _printf(const char *format, ...);
 
 #endif
