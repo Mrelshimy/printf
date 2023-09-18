@@ -21,7 +21,7 @@ int hex_pr(va_list pfargs, const char *format)
         c_ret += 2;
     }
 
-    write(1, &c_ret, strlen(c_ret));
+    write(1, &c_ret, 1);
 
-	return (1);
+	return (x);
 }
