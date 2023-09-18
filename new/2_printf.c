@@ -17,24 +17,30 @@ int _printf(const char *format, ...)
 		{"%%", per_pr},
 		{"%d", int_pr},
 		{"%s", str_pr},
+		{"%r", rev_pr},
 	};
 
 	int count_ret = 0;
 	int n = 0, m;
 	va_list pfargs;
 
-	va_start(pfargs, format);
 	if (format == NULL || (format[0] == '%' && !format[1]))
 		return (-1);
+/*	if (format[0] == '%' && format[1] == ' ' && !format[2]) */
+/*		return (-1);*/
+
+	va_start(pfargs, format);
+check:
 	while (format[n] != '\0')
 	{
-		m = 4;
+		m = 5;
 		while (m >= 0)
 		{
 			if (check_sp[m].sp[0] == format[n] && check_sp[m].sp[1] == format[n + 1])
 			{
 				count_ret += check_sp[m].fn(pfargs);
 				n = n + 2;
+				goto check;
 			}
 			m--;
 		}
