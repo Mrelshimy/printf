@@ -14,8 +14,6 @@ int rev_pr(va_list pfargs)
 	int i = 0, j;
 	char *s_r = va_arg(pfargs, char*);
 
-	if (s_r == NULL)
-		s_r = "(null)";
 	while (s_r[i] != '\0')
 		i++;
 
