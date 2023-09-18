@@ -12,14 +12,8 @@
 int _printf(const char *format, ...)
 {
 	call_fn check_sp[] = {
-		{"%b", bin_pr},
-		{"%c", char_pr},
-		{"%%", per_pr},
-		{"%d", int_pr},
-		{"%i", int_pr},
-		{"%s", str_pr},
-		{"%r", rev_pr},
-	};
+		{"%b", bin_pr},	{"%c", char_pr}, {"%%", per_pr}, {"%d", int_pr},
+		{"%i", int_pr}, {"%s", str_pr}, {"%r", rev_pr}, };
 
 	int count_ret = 0;
 	int n = 0, m;
@@ -45,7 +39,7 @@ check:
 			}
 			m--;
 		}
-		_putchar (format[n]);
+		putchar (format[n]);
 		count_ret++;
 		n++;
 
