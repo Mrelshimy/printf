@@ -39,7 +39,7 @@ check:
 			}
 			m--;
 		}
-		putchar (format[n]);
+		putchar(format[n]);
 		count_ret++;
 		n++;
 
