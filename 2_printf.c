@@ -29,7 +29,7 @@ int _printf(const char *format, ...)
 check:
 	while (format[n] != '\0')
 	{
-		m = 7;
+		m = 11;
 		while (m >= 0)
 		{
 			if (check_sp[m].sp[0] == format[n] && check_sp[m].sp[1] == format[n + 1])
