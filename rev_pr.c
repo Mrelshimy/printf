@@ -11,17 +11,19 @@
 
 int rev_pr(va_list pfargs)
 {
-	int a = 0, b;
+	int i = 0, j;
 	char *s_r = va_arg(pfargs, char*);
-	
-	if (s_r == NULL)
-		return (-1);
 
-	while (s_r[a] != '\0')
-		a++;
+	while (s_r[i] != '\0')
+		i++;
+	j = i;
+	i -= 1;
 
-	for (b = a - 1; b >= 0; b--)
-		putchar(s_r[b]);
+	while (i >= 0)
+	{
+		putchar(s_r[i]);
+		i--;
+	}
 
-	return (a);
+	return (j);
 }
