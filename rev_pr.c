@@ -11,11 +11,12 @@
 
 int rev_pr(va_list pfargs)
 {
-	int i = 0;
+	int i = 0, j;
 	char *s_r = va_arg(pfargs, char*);
 
 	while (s_r[i] != '\0')
 		i++;
+	j = i;
 	i -= 1;
 
 	while (i >= 0)
@@ -24,5 +25,5 @@ int rev_pr(va_list pfargs)
 		i--;
 	}
 
-	return (i);
+	return (j);
 }
