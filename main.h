@@ -25,6 +25,7 @@ typedef struct call_fn
 } call_fn;
 
 int str_pr(va_list pfargs);
+int _putchar(char c);
 int char_pr(va_list pfargs);
 int per_pr(void);
 int int_pr(va_list pfargs);
