@@ -11,16 +11,22 @@
 
 int _printf(const char *format, ...)
 {
-	int count_ret = 0;
-	int n;
-	va_list pfargs;
 	call_fn check_sp[] = {
 		{"%s", str_pr},
 		{"%c", char_pr},
 		{"%%", per_pr},
 		{"%d", int_pr},
 		{"%i", int_pr},
+		{"%r", rev_pr},
+		{"%b", bin_pr},
+		{"%x", hex_pr},
+		{"%p", ptr_pr}
 		};
+
+	int count_ret = 0;
+	int n = 0;
+	int m;
+	va_list pfargs;
 
 	if (format == NULL || (format[0] == '%' && !format[1]))
 		return (-1);
