@@ -8,6 +8,8 @@
 #include <string.h>
 #include <limits.h>
 
+#define BUFFER_SIZE 1924
+
 /**
  * struct call_fn - struct for calling printing functions
  *
@@ -27,6 +29,10 @@ int str_pr(va_list pfargs);
 int char_pr(va_list pfargs);
 int per_pr(void);
 int int_pr(va_list pfargs);
+int bin_pr(va_list pfargs);
+int rev_pr(va_list pfargs);
+int hex_pr(va_list pfargs, const char *format);
+int ptr_pr(va_list pfargs);
 int _printf(const char *format, ...);
 
 #endif
