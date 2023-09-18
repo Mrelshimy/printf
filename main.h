@@ -6,7 +6,9 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include <string.h>
+#include <limits.h>
 
+#define BUFFER_SIZE 1024
 /**
  * struct call_fn - struct for calling printing functions
  *
