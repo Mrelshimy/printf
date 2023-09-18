@@ -24,7 +24,7 @@ int rot13_pr(va_list pfargs)
 		int i = 0;
 
 		while (i < 52)
-		}
+		{
 
 			if (str_rot13[j] == old[i])
 			{
