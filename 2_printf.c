@@ -45,7 +45,7 @@ check:
 			}
 			m--;
 		}
-		putchar (format[n]);
+		_putchar (format[n]);
 		count_ret++;
 		n++;
 
