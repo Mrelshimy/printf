@@ -13,7 +13,8 @@ int _printf(const char *format, ...)
 {
 	call_fn check_sp[] = {
 		{"%b", bin_pr},	{"%c", char_pr}, {"%%", per_pr}, {"%d", int_pr},
-		{"%i", int_pr}, {"%s", str_pr}, {"%r", rev_pr}, {"%R", rot13_pr}, {"%u", u_pr}, {"%o", o_pr}, {"%x", x_pr}{"%X", X_pr}};
+		{"%i", int_pr}, {"%s", str_pr}, {"%r", rev_pr}, {"%R", rot13_pr},
+		{"%u", u_pr}, {"%o", o_pr}, {"%x", x_pr}, {"%X", X_pr}};
 
 	int count_ret = 0;
 	int n = 0, m;
@@ -28,7 +29,7 @@ int _printf(const char *format, ...)
 check:
 	while (format[n] != '\0')
 	{
-		m = 12;
+		m = 11;
 		while (m >= 0)
 		{
 			if (check_sp[m].sp[0] == format[n] && check_sp[m].sp[1] == format[n + 1])
