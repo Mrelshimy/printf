@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- *X_pr - encodes and prints uppercase hexadecimal numbers
- *@pfargs : input argument
+ * X_pr - encodes and prints uppercase hexadecimal numbers
+ * @pfargs : input argument
  *
- *Discription Function to encode uppercase hexadecimal numbers
+ * Discription Function to encode uppercase hexadecimal numbers
  *
- *Return: string length
+ * Return: string length
  */
 
 

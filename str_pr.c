@@ -2,11 +2,11 @@
 
 /**
  * str_pr - function to print a string argument input
- *@pfargs: input argument
+ * @pfargs: input argument
  *
- *Description: function to print a string input w/o printf
+ * Description: function to print a string input w/o printf
  *
- *Return: string length
+ * Return: string length
  */
 
 int str_pr(va_list pfargs)

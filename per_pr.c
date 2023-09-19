@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- *per_pr - function to print %
+ * per_pr - function to print %
  *
- *Description: function to print % w/o printf
+ * Description: function to print % w/o printf
  *
- *Return: 1
+ * Return: 1
  */
 
 int per_pr(void)

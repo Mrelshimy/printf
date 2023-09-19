@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- *x_pr - encodes and prints lowercase hexadecimal numbers
- *@pfargs : input argument
+ * x_pr - encodes and prints lowercase hexadecimal numbers
+ * @pfargs : input argument
  *
- *Discription Function to encode lowercase hexadecimal numbers
+ * Discription Function to encode lowercase hexadecimal numbers
  *
- *Return: string length
+ * Return: string length
  */
 
 int x_pr(va_list pfargs)

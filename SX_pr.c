@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- *SX_pr - encodes and prints uppercase hexadecimal numbers
- *@a : input argument
+ * SX_pr - encodes and prints uppercase hexadecimal numbers
+ * @a : input argument
  *
- *Discription Function to encode uppercase hexadecimal numbers
+ * Discription Function to encode uppercase hexadecimal numbers
  *
- *Return: length
+ * Return: length
  */
 
 int SX_pr(int a)

@@ -2,11 +2,11 @@
 
 /**
  * int_pr - function to print an integer argument input
- *@pfargs: list of input argument
+ * @pfargs: list of input argument
  *
- *Description: function to print a integer input w/o Printf
+ * Description: function to print a integer input w/o Printf
  *
- *Return: length of printed int
+ * Return: length of printed int
  */
 
 int int_pr(va_list pfargs)

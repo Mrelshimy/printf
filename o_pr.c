@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- *o_pr - encodes and prints octal numbers
- *@pfargs : input argument
+ * o_pr - encodes and prints octal numbers
+ * @pfargs : input argument
  *
- *Discription Function to encode octal numbers
+ * Discription Function to encode octal numbers
  *
- *Return: string length
+ * Return: string length
  */
 
 int o_pr(va_list pfargs)

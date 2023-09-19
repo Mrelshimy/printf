@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- *u_pr - encodes and prints unsigned integers
- *@pfargs : input argument
+ * u_pr - encodes and prints unsigned integers
+ * @pfargs : input argument
  *
- *Discription Function to encode unsigned integers
+ * Discription Function to encode unsigned integers
  *
- *Return: string length
+ * Return: string length
  */
 
 int u_pr(va_list pfargs)

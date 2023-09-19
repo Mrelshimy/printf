@@ -2,11 +2,11 @@
 
 /**
  * rev_pr - function to print string in reverse
- *@pfargs: list of input argument
+ * @pfargs: list of input argument
  *
  * Description: function to print string in reverse
  *
- *Return: length of printed int
+ * Return: length of printed int
  */
 
 int rev_pr(va_list pfargs)

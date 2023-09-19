@@ -2,11 +2,11 @@
 
 /**
  * bin_pr - function to print an unsigned int in binary
- *@pfargs: list of input argument
+ * @pfargs: list of input argument
  *
- *Description: function to print an integer in binary w/o Printf
+ * Description: function to print an integer in binary w/o Printf
  *
- *Return: length of printed int
+ * Return: length of printed int
  */
 
 int bin_pr(va_list pfargs)

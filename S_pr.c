@@ -2,11 +2,11 @@
 
 /**
  * S_pr - function to print an special values in hex
- *@pfargs: list of input argument
+ * @pfargs: list of input argument
  *
- *Description: function to print special values in hex
+ * Description: function to print special values in hex
  *
- *Return: length of printed int
+ * Return: length of printed int
  */
 
 int S_pr(va_list pfargs)

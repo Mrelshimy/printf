@@ -2,11 +2,11 @@
 
 /**
  * char_pr - function to print a character argument input
- *@pfargs: input argument
+ * @pfargs: input argument
  *
- *Description: function to print a character input w/o printf
+ * Description: function to print a character input w/o printf
  *
- *Return: 1
+ * Return: 1
  */
 
 int char_pr(va_list pfargs)
