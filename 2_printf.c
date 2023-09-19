@@ -26,6 +26,7 @@ int _printf(const char *format, ...)
 
 	va_start(pfargs, format);
 
+check:
 	for (n = 0; format[n] != '\0'; n++)
 	{
 		m = 12;
@@ -35,7 +36,7 @@ int _printf(const char *format, ...)
 			{
 				count_ret += check_sp[m].fn(pfargs);
 				n = n + 2;
-				break;
+				goto check;
 			}
 			m--;
 		}
