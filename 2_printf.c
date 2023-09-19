@@ -15,8 +15,8 @@ int _printf(const char *format, ...)
 	int n = 0, m;
 	va_list pfargs;
 	call_fn check_sp[] = {
-		{bin_pr, "%b"},	{char_pr, "%c"}, {per_pr, "%%"}, {u_pr, "%d"},
-		{u_pr, "%i"}, {str_pr, "%s"}, {rev_pr, "%r"}, {rot13_pr, "%R"},
+		{bin_pr, "%b"},	{char_pr, "%c"}, {per_pr, "%%"}, {int_pr, "%d"},
+		{int_pr, "%i"}, {str_pr, "%s"}, {rev_pr, "%r"}, {rot13_pr, "%R"},
 		{u_pr, "%u"}, {o_pr, "%o"}, {x_pr, "%x"}, {X_pr, "%X"}, {S_pr, "%S"}};
 
 	if (format == NULL || (format[0] == '%' && !format[1]))
